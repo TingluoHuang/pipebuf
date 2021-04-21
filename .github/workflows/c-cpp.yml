@@ -21,3 +21,4 @@ jobs:
       uses: ncipollo/release-action@v1.8.4
       with:
         artifacts: measure-pipebuf, pipebuf-constants
+        token: ${{ github.token }}
