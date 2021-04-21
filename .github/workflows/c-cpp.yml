@@ -14,5 +14,10 @@ jobs:
     - name: make
       run: | 
         make
-        make all
         ls -l
+    - name: Create Release
+      # You may pin to the exact commit or the version.
+      # uses: ncipollo/release-action@7c5046364401a3e122086927d07617a3d756b658
+      uses: ncipollo/release-action@v1.8.4
+      with:
+        artifacts: measure-pipebuf, pipebuf-constants
