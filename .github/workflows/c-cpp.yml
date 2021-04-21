@@ -22,4 +22,4 @@ jobs:
       with:
         artifacts: measure-pipebuf, pipebuf-constants
         token: ${{ github.token }}
-        tag:  ${{ github.sha }}
+        tag:  v1.0
